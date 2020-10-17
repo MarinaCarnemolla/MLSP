@@ -15,8 +15,8 @@ from utils import Dict
 from sys import exit
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--model_dir", type=str, default="gan_synth_model/")
-parser.add_argument('--filenames', type=str, default="./nsynth_test.tfrecord")
+parser.add_argument("--model_dir", type=str, default="/content/MLSP/gan_synth_model/")
+parser.add_argument('--filenames', type=str, default="/content/MLSP/nsynth_test.tfrecord")
 parser.add_argument("--batch_size", type=int, default=8)
 parser.add_argument("--num_epochs", type=int, default=None)
 parser.add_argument("--total_steps", type=int, default=1000000)
