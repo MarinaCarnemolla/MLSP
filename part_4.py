@@ -46,6 +46,7 @@ with tf.Graph().as_default():
     
     num_waveforms = 0
     for waveforms in generator:
+        print("Arriva ------>", waveforms)
         for waveform in waveforms:
             wavfile.write(f"results/{num_waveforms}.wav", rate=16000, data=waveform)
             num_waveforms += 1
